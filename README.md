@@ -12,4 +12,3 @@ Note that a zero-padded ID is prepended to the name to help in differentiating c
 
 ## TODOs
 - May want to normalize the length of names within a small variation, as information can be inferred from the number of characters in a name
-- Alignment will break on dashboards with 100 or more candidates

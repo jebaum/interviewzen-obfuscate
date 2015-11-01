@@ -73,12 +73,8 @@ String.prototype.replaceAt = function(index, c) {
 
 // helper function to zero-pad numbering system (for alignment)
 function pad(x, max) {
-    if (max < 10) {
-        return x.toString();
-    } else if (max < 100) {
-        return (x < 10) ? ('0' + x.toString()) : x.toString();
-    }
-    // XXX add another case here if there's ever more than 100 candidates on a page
+    var zeroesToAdd = max.toString().length - x.toString().length;
+    return '0'.repeat(zeroesToAdd) + x.toString();
 }
 
 
